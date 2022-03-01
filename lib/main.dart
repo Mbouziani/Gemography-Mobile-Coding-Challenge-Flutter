@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:gemography_challenge/View/Screen/Home_Screen.dart';
+import 'package:gemography_challenge/View/Screen/Riverpod_Home_Screen.dart';
 
 void main() {
   runApp(const ProviderScope(child: MyApp()));
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: HomeScreen(),
     );
