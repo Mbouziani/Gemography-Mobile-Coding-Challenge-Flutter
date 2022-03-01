@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:gemography_challenge/Controler/GithubData_Api.dart';
+import 'package:gemography_challenge/Controler/GithubData_Api_Riverpod.dart';
 import 'package:gemography_challenge/Model/GithubUser_Model.dart';
 import 'package:gemography_challenge/View/Widget/CardItem_Widget.dart';
 
@@ -59,28 +60,3 @@ class RiverHomeScreen extends StatelessWidget {
     );
   }
 }
-
-
-
-// Expanded(
-//                         child: ListView.separated(
-//                           shrinkWrap: true,
-//                           physics: const BouncingScrollPhysics(),
-//                           itemCount: snapshot.data!.length,
-//                           itemBuilder: (context, index) => CardItem(
-//                             RepoName: snapshot.data![index].name.toString(),
-//                             RepoDesc:
-//                                 snapshot.data![index].description.toString(),
-//                             OwnerName:
-//                                 snapshot.data![index].owner!.login.toString(),
-//                             OwnerAvatar: snapshot.data![index].owner!.avatarUrl
-//                                 .toString(),
-//                             RepoStarCount:
-//                                 snapshot.data![index].stargazersCount!,
-//                           ),
-//                           separatorBuilder: (context, index) => const Divider(
-//                             height: 1,
-//                             color: Colors.grey,
-//                           ),
-//                         ),
-//                       )
